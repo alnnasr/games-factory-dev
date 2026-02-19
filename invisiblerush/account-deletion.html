@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Rush - Account & Data Deletion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6366f1;
+      --bg: #020617;
+    }
+    body {
+      font-family: 'Inter', 'Cairo', sans-serif;
+      background-color: var(--bg);
+      color: #f8fafc;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .accent-glow {
+      position: fixed;
+      top: -10%;
+      left: -10%;
+      width: 40%;
+      height: 40%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .accent-glow-bottom {
+      position: fixed;
+      bottom: -10%;
+      right: -10%;
+      width: 40%;
+      height: 40%;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.1) 0%, transparent 70%);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .content-section {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+    .content-section:last-child {
+      border-bottom: none;
+    }
+    .step-badge {
+      background: rgba(99, 102, 241, 0.1);
+      color: #818cf8;
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="accent-glow"></div>
+  <div class="accent-glow-bottom"></div>
+
+  <div class="min-h-screen py-12 px-6">
+    <div class="max-w-3xl mx-auto">
+      
+      <!-- Back Button -->
+      <a href="https://alnnasr.github.io/games-factory-dev/" class="glass inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl text-slate-300 hover:text-white hover:bg-white/5 transition-all mb-10 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="font-medium">Back to Home</span>
+      </a>
+
+      <!-- Main Card -->
+      <div class="glass p-8 md:p-14 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-indigo-500/5 blur-3xl rounded-full -ml-16 -mt-16"></div>
+        
+        <header class="mb-12 text-left">
+          <div class="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-bold mb-4 tracking-wider uppercase">
+            Invisible Rush
+          </div>
+          <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Account & Data Deletion</h1>
+          <p class="text-slate-400 text-lg">Manage your account and data deletion preferences below.</p>
+        </header>
+
+        <div class="space-y-10 text-left">
+          
+          <!-- Section 1 -->
+          <div class="content-section">
+            <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+              <span class="w-2 h-8 bg-indigo-500 rounded-full mr-3"></span>
+              Invisible Rush – Account and Data Deletion
+            </h2>
+            <div class="text-slate-300 space-y-4">
+              <p>Invisible Rush is developed by <strong>Games Factory Dev</strong>.</p>
+              <p>The game itself does not require users to create an account in order to play. However, if a user chooses to connect to the leaderboard feature using the "Connect" button, this will redirect them to create or use an existing GDevelop account.</p>
+            </div>
+          </div>
+
+          <!-- Section 2: Steps -->
+          <div class="content-section">
+            <h2 class="text-2xl font-bold text-white mb-6">How to delete my entire GDevelop account</h2>
+            <p class="text-slate-400 mb-6 italic">To initiate a full account deletion, follow these steps:</p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="step-badge">1</span>
+                <p class="text-slate-200">Open the GDevelop app (mobile app, desktop app or the <a href="https://editor.gdevelop.io/" class="text-indigo-400 underline hover:text-indigo-300" target="_blank">web app</a>).</p>
+              </div>
+              <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="step-badge">2</span>
+                <p class="text-slate-200">Login with your profile, if it's not already done.</p>
+              </div>
+              <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="step-badge">3</span>
+                <p class="text-slate-200">Open your profile page by clicking on your username in the GDevelop homepage.</p>
+              </div>
+              <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="step-badge">4</span>
+                <p class="text-slate-200">In your Profile, click <strong>Edit my profile</strong>.</p>
+              </div>
+              <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5">
+                <span class="step-badge">5</span>
+                <p class="text-slate-200">At the bottom, click <strong>Delete my account</strong>.</p>
+              </div>
+              <div class="flex items-start bg-indigo-500/10 p-4 rounded-2xl border border-indigo-500/20">
+                <span class="step-badge">6</span>
+                <p class="text-slate-200">Validate your choice after clicking on Delete my account. Your account will be removed and inaccessible soon after.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Data -->
+          <div class="content-section">
+            <h2 class="text-2xl font-bold text-white mb-4">Data that will be deleted:</h2>
+            <ul class="text-slate-300 space-y-2">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-indigo-500 mr-2 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>Leaderboard-related data (such as scores and user identifiers)</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-indigo-500 mr-2 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                <span>GDevelop account data associated with the leaderboard connection</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Section 4: Retention -->
+          <div class="content-section">
+            <h2 class="text-2xl font-bold text-white mb-4">Data retention:</h2>
+            <div class="bg-indigo-500/5 p-6 rounded-2xl border-l-4 border-indigo-500 text-slate-300">
+              <p class="mb-3">Data deletion is handled by <strong>GDevelop</strong> according to their specific policies.</p>
+              <p><strong>Invisible Rush</strong> does not store or retain any personal user data on its own servers.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <footer class="mt-16 pt-8 border-t border-white/5 text-center text-slate-500 text-sm">
+          <p>Last updated: <span class="text-slate-400">February 2025</span></p>
+          <p class="mt-2">All Rights Reserved © Games Factory Dev</p>
+        </footer>
+      </div>
+
+      <div class="mt-12 text-center">
+        <p class="text-slate-600 text-sm">Invisible Rush - Developed with ❤️ for Android</p>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
